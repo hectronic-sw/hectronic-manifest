@@ -1,52 +1,20 @@
 hectronic-manifest
 ==================
 
-This repository contain repo manifests that selects the version of the Yocto
-source code layers to build images for Hectronic products.
-
-The different branches in this repository corresponds to different releases of 
-Yocto:
-
-| Yocto version | Codename  | Branch    |
-|---------------|-----------|-----------|
-| 5.2           | Walnascar | walnascar |
-| 6.0           | Wrynose   | wrynose   |
-
-And so on.
+This is the manifest branch that support Yocut Walnascar builds for Hectronic
+products.
 
 Short build instructions for each platform are found below. For further
 configuration and tweaking, see the online Yocto manual and the BSP manual 
 provided with the product.
-
-Intel x86 based products
-------------------------
-
-Initialize repo:
-```
-$ repo init -u https://github.com/hectronic-se/hectronic-manifest -b wrynose -m repo/intel-x86.xml
-```
-
-Sync source code:
-```
-$ repo sync
-```
-
-Configure yocto/bitbake:
-```
-$ TEMPLATECONF=`pwd`/sources/meta-hectronic-x86/conf/templates/h6089-q7x151 . poky/oe-init-build-env
-```
-
-Build image:
-```
-$ bitbake core-image-minimal
-```
 
 NXP i.mx based products
 -----------------------
 
 Initialize repo:
 ```
-$ repo init -u https://github.com/hectronic-se/hectronic-manifest -b walnascar -m repo/nxp-imx.xml
+=======
+$ repo init -u https://github.com/hectronic-sw/hectronic-manifest -b walnascar -m repo/nxp-imx.xml
 ```
 
 Sync source code:
@@ -64,5 +32,4 @@ Build image:
 ```
 $ bitbake core-image-minimal
 ```
-
 
