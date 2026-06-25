@@ -13,7 +13,6 @@ NXP i.mx based products
 
 Initialize repo:
 ```
-=======
 $ repo init -u https://github.com/hectronic-sw/hectronic-manifest -b walnascar -m repo/nxp-imx.xml
 ```
 
