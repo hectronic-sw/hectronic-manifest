@@ -48,6 +48,6 @@
   <project name="meta-nxp-connectivity" remote="imx" path="sources/meta-nxp-connectivity" revision="refs/tags/rel_imx_6.12.49_2.2.0" upstream="imx_matter_2025_q3-post" />
   <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.12.49_2.2.0" upstream="walnascar-6.12.49-2.2.0" />
 
-  <project name="meta-hectronic-imx" remote="hec" path="sources/meta-hectronic-imx" revision="9d6ea887b977245c4312761710f1df016dc97293" />
+  <project name="meta-hectronic-imx" remote="hec" path="sources/meta-hectronic-imx" revision="727a959be2c61be766e04c19bc59cfe347438bea" />
 
 </manifest>
