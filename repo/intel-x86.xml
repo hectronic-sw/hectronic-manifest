@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default revision="wrynose" sync-j="4"/>
+
+  <remote name="yp"    fetch="https://git.yoctoproject.org"/>
+  <remote name="oe"    fetch="https://git.openembedded.org/"/>
+  <remote name="intel" fetch="https://git.yoctoproject.org/"/>
+  <remote name="hec"   fetch="https://github.com/hectronic-sw"/>
+
+  <project name="bitbake" remote="oe" path="sources/bitbake" revision="fae9db3168dbff1b8c76fe9c6726a9687ff97514" upstream="2.18"/>
+  <project name="openembedded-core" remote="oe" path="sources/openembedded-core" revision="ef022bf82d79015802309d14c28b13373ebe53f5" upstream="wrynose"/>
+  <project name="meta-yocto" remote="yp" path="sources/meta-yocto" revision="1b132647002eea43a2c7a7f857f63f42dacbc26c" upstream="wrynose"/>
+  <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="14282a02be9c74a1276a7cda7d6c89e054699a11" upstream="wrynose"/>
+  <project name="meta-security" remote="yp" path="sources/meta-security" revision="c0d1d6200e7a84c39fb940cb1f22aad4b0b3d808" upstream="wrynose"/>
+  <project name="meta-intel" remote="intel" path="sources/meta-intel" revision="79a9681ce83f6bf36aede3aeb8c1707d29bca329" upstream="wrynose"/>
+
+  <project name="meta-hectronic-x86" remote="hec" path="sources/meta-hectronic-x86" revision="777a25526e5e26509dd6b567ab65dca6383b6e2e" upstream="wrynose"/>
+</manifest>

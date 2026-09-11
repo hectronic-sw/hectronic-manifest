@@ -41,11 +41,8 @@ NXP i.MX based products
 
 Initialize repo:
 ```
+mkdir -p nxp-yocto && cd $_
 repo init -u https://github.com/hectronic-sw/hectronic-manifest -b wrynose -m repo/nxp-imx.xml
-```
-
-Sync source code:
-```
 repo sync
 ```
 
@@ -54,6 +51,13 @@ Configure yocto/bitbake:
 MACHINE=h6095-smx331 DISTRO=fsl-imx-xwayland . imx-setup-release.sh -b build-h6095
 echo 'BBLAYERS += "${BSPDIR}/sources/meta-hectronic-imx"' >> conf/bblayers.conf
 ```
+
+Add local changes (to speedup rebuild during development)
+ - conf/local.conf
+    - INHERIT += "rm_work"
+ - conf/site.conf
+    - DL_DIR ?= "${BSPDIR}/../downloads/"
+    - SSTATE_DIR ?= "${BSPDIR}/../sstate-cache/"
 
 Build image:
 ```
