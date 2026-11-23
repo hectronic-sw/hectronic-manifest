@@ -14,5 +14,5 @@
   <project name="meta-security" remote="yp" path="sources/meta-security" revision="c0d1d6200e7a84c39fb940cb1f22aad4b0b3d808" upstream="wrynose"/>
   <project name="meta-intel" remote="intel" path="sources/meta-intel" revision="79a9681ce83f6bf36aede3aeb8c1707d29bca329" upstream="wrynose"/>
 
-  <project name="meta-hectronic-x86" remote="hec" path="sources/meta-hectronic-x86" revision="777a25526e5e26509dd6b567ab65dca6383b6e2e" upstream="wrynose"/>
+  <project name="meta-hectronic-x86" remote="hec" path="sources/meta-hectronic-x86" revision="159a70babb23713291c399b7b5012a0525f885f8" upstream="wrynose"/>
 </manifest>
